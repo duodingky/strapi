@@ -1,5 +1,5 @@
 {
-  "kind": "singleType",
+  "kind": "collectionType",
   "collectionName": "banners",
   "info": {
     "singularName": "banner",
@@ -13,13 +13,19 @@
   "attributes": {
     "bannerImg": {
       "type": "media",
-      "multiple": true,
+      "multiple": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
       ]
+    },
+    "link": {
+      "type": "string"
+    },
+    "shortDesc": {
+      "type": "string"
     }
   }
 }
